@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Brownstone Magic</title>
+	<meta name="description" content="Brownstone Magic">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
+	<style type="text/css">
+    .cola,
+    .colb,
+    .colc {
+      border: 1px #000 solid;
+    }
+    
+    .cola {
+      background: #aaa;
+    }
+    
+    .colb {
+      background: #bbb;
+    }
+    
+    .colc {
+      background: #ccc;
+    }
+    
+    .carousel-inner>.item>img {
+      margin: 0px auto;
+    }
+ 
+    #gallery {
+      margin: 30px;
+ }
+
+    .img-responsive  {
+      border-radius: 50px;
+      }
+
+    .Avenue {
+      border-radius: 25px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    #unique {
+      margin:50px 0px; border-radius: 25px; 
+
+    }    
+
+    #unique2 {
+      margin:15px 0px; border-radius: 25px;  
+
+    }   
+
+    @media screen and (max-width: 900px) {
+      p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+
+	<style>
+	body{
+		padding-top: 40px;
+	}
+	</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+
+  <!-- Navbar -->
+  	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+
+  				<a href="" class="navbar-brand">Brownstone Magic</a>
+  			</div><!-- Navbar Header-->
+  			<div class="collapse navbar-collapse" id="navbar-collapse">
+  				
+  			<a href="" class="btn btn-warning navbar-btn navbar-right">Download Now</a>
+  				<ul class="nav navbar-nav">
+  					<li><a href="#feedback">Feedback</a> 
+  					<li><a href="#gallery">Gallery</a> 
+  					<li><a href="#features">Features</a> 
+  					<li><a href="#faq">Faq</a> 
+  					<li><a href="#contact">Contact Us</a> 
+            <li><a href="#loginModal" data-toggle="modal" data-target"#loginModal">Login</a> 
+  				</ul>
+  			</div>
+  		</div><!-- End Container-->
+  	</nav><!-- End navbar -->
+
+<!-- modal event -->
+<!-- First here is the modal button in navbar pull right places it on right-->
+<!-- <button class="btn btn-primary btn-primary btn sm pull-right" data-target="#loginModal" data-toggle="modal">Login</button> -->
+  <div  class="modal" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"> 
+             <h4 class="modal-title">Login</h4>  
+              <button class="close" data-dismiss="modal">&times;</button>
+              <!-- this causes button to dismiss  -->
+             
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- This standard form by adding class bootstrap is triggered -->
+                <div class="form-group">
+                    <label for="inputUserName">Username </label>
+                    <input class="form-control" placeholder="Login Username" type="text" id="inputUserName"/>
+                  </div>
+                  <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input class="form-control" placeholder="Login Password" type="password" id="inputPassword" />
+                  </div>
+                   <button type="submit" class="btn btn-prinmary">Login</button> 
+                   <button type="submit" class="btn btn-primary">Close</button>
+              </form>
+          </div>
+        </div>
+       <!--  <div class="modal-footer"></div>
+          <Button class="btn btn-primary">Login</Button> -->
+          <!-- <Button class="btn btn-primary"data-dismiss="modal">Close</Button>
+          data function triggers dismissal - this is if you want a button outside of nav bar -->
+      </div>
+  </div>
+
+<!-- End modal event -->
+
+
+<!-- Gallery -->
+  <div class="container">
+    <section>
+      <div page-header" id="gallery">
+          <h2 class=class="page-header"></h2> 
+           <h2 class="animated bounce"  style="text-align:center"></h2>
+        </div> 
+
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/bedstuymasterint22.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3></h3>
+               <!--  <p>This is the caption</p> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/bedstuymasterint24.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3></h3>
+               <!--  <p>This is the caption</p> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/bedstuymasterint27.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3></h3>
+               <!--  <p>This is the caption</p> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/bedstuymasterint29.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3></h3>
+                <!-- <p>This is the caption</p> -->
+              </div>
+            </div>
+
+          </div><!-- End Carousel inner -->
+
+          <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div><!-- End Carousel -->
+        
+  	<!-- jumbotron-->
+
+  	<div class="jumbotron">
+  		<div class="container text-center">
+  			<h1>Brownstone Magic</h1>
+  			<p>Bedford Stuyvesant has a flavor all of its own -- even moreso right now! </p>
+
+  			<div class="btn-group">
+  				<a href="" class="btn btn-lg btn-info">Download App</a>
+  				<a href="" class="btn btn-lg btn-default">Book Your Appointment</a>
+  				<a href="" class="btn btn-lg btn-info">Spread the word</a>
+  			</div>
+  		</div><!-- End container -->
+  	</div><!-- End jumbotron-->
+
+  	<!-- Feedback-->
+  	<div class="container">
+  		<section>
+  			<div class="page-header" id="feedback">
+  				<h2>Feedback.<small> Real Talk from Real People</small></h2>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>
+            I wonder how long it's going to take for the area to be completely rezoned and the families living in the 21 housing projects in the area to be pushed out? It's very sad, but that's what happens when an area is discovered by the real estate sharks and the yuppies with their wherewithal start contacting their government officials to change things. </p>
+  						<footer>John doe</footer>
+  					</blockquote>
+  				</div>
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>The most gentrified community in Brooklyn and Spike Lee predicted it﻿.</p>
+  						<footer>John doe</footer>
+  					</blockquote>
+  				</div>
+  				<div class="col-md-4">
+  					<blockquote>
+  						<p>I grew up right around the corner from where that Biggie mural now is. That mural is on Throop Ave at the corner of Greene and I grew up one  block down on Lexington Ave (bet. Throop and Tompkins). We lived on Lex Ave from '83 - 2000. Bed-Stuy was HOME. The entire COMMUNITY (neighborhood) was home.</p>
+  						<footer>John doe</footer>
+  					</blockquote>
+  				</div>
+  			</div><!-- End row -->
+  		</section>
+  	</div><!--End Container-->
+
+<!-- call to action -->
+	<section>
+		<div class="well">
+			<div class="container text-center">
+				<h3>Subscribe for more free stuff</h3>
+				<p>Enter your name and email</p>
+
+				<form action="" class="form-inline">
+					<div class="form-group">
+						<label for="subscription">Subscribe</label>
+						<input type="text" class="form-control" id="subscription" placeholder="Your name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="text" class="form-control" id="email" placeholder="Enter your Email">
+					</div>
+					<button type="submit" class="btn btn-default">Subscribe</button>
+					<hr>
+				</form>
+
+
+			</div><!-- end Container-->
+
+		</div><!-- end well-->
+	</section><!-- Call to action -->
+
+		</section>
+	</div>
+
+<!-- Video -->
+
+<div class="container">
+    <section>
+<div class="row">
+          <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - Inconvenient Truth.</h3>
+                <!-- video { -->
+
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/yymdI2A3tVc?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - IT-2</h3>
+                <!-- video { -->
+
+             <iframe width="400" height="315" src="https://www.youtube.com/embed/mC38WHZvjkM?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <!-- <span class="glyphicon glyphicon-ok"></span> -->
+                <h3>Bed-Stuy - IT-3</h3>
+                <!-- video { -->
+
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/0Xq6JDUIYjY?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+<!-- End of Video -->
+
+<!-- features -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="features">
+  				<h2>Why Bed-Stuy?<small> What's so cool about Bed-Stuy?.</small></h2>
+  			</div><!-- End Page Header -->
+
+  			<div class="row">
+  				<div class="col-sm-8">
+  					<h3>Where is Bed-Stuy</h3>
+  					<p>Bedford Stuyvesant, colloquially known as Bed–Stuy, is a neighborhood of 153,000 inhabitants in the north central portion of the New York City borough of Brooklyn. </p>
+  				</div>
+  				<div class="col-sm-4">
+  					<img src="img/bedstuymasterint4.jpg" class="img-responsive" alt="image">
+  				</div>
+  			</div><!-- End row -->
+  			<div class="row">
+  				<div class="col-sm-8">
+  					<h3>More About Bed-Stuy Location</h3>
+  					<p>Bedford–Stuyvesant is bordered by Flushing Avenue to the north (bordering Williamsburg), Classon Avenue to the west (bordering Clinton Hill), Broadway to the east (bordering Bushwick), and Atlantic Avenue to the south (bordering Crown Heights and Brownsville). </p>
+  				</div>
+  				<div class="col-sm-4" id="unique">
+  					<img src="img/bedstuymasterint5.jpg" class="img-responsive" alt="image">
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-sm-8">
+  					<h3>History</h3>
+  					<p>For decades, it has been a cultural center for Brooklyn's African American population. Following the construction of the IND Fulton Street Line in 1936, African Americans left an overcrowded Harlem for greater housing availability in Bedford–Stuyvesant. From Bedford–Stuyvesant, African Americans have since moved into the surrounding areas of Brooklyn including Brownsville, and Fort Greene. Bedford–Stuyvesant has many historic brownstones developed by speculative developers for the expanding middle to upper middle class from the 1890s to the late 1910s.</p>
+  				</div>
+  				<div class="col-sm-4" id="unique2">
+  					<img src="img/bedstuymasterbackyard.jpg" class="img-responsive" alt="image">
+  				</div>
+  			</div>
+
+  			<hr> 
+
+  			<div class="row">
+  				<div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						<div class="panel-body">
+  							<!-- <span class="glyphicon glyphicon-ok"></span> -->
+  							<h4>280 Jefferson Ave</h4>
+                <img class="Avenue" src="img/bedstuyfoyer.jpg" alt="Text of the image" style="width:500px;height:600px;">
+  							<h3>Adriane Brit resides on the parlor and ground floors.  We are not on the parlor floor.  Again we continue to experience the beauty of the exposed brick throughout the home.  In the living room to the front of the house) Adrian shared an interesting piece of information.  Her home and the homes to the right and left of her are identical.  The builders at that time (over 100 years ago), made a temporary door which allowed them to go back and forth through the homes while under construction.  Once completed, the doors were sealed.  By exposing the brick you can still see the beams used for the temporary opening.</h3>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						<div class="panel-body">
+  					<!-- 		<span class="glyphicon glyphicon-star"></span> -->
+  							<h4>33 Herkimer St</h4>
+                <img class="Avenue" src="img/bedstuymodfoyer.jpg" alt="Text of the image" style="width:500px;height:600px;">
+  							<h3> 
+                  Founded by Ivy N. Jones, Welancora is a contemporary art gallery located in a 19th century townhouse in Bedford-Stuyvesant.   The purpose of the gallery is to represent artists from around the world by placing their works with collectors, museums and corporations.  
+
+                Welancora’s exhibition program consists of approximately 6 shows per year featuring works by leading international artists including Aisha T. Bell, Sunok Chun, Maria Paz, Donovan Nelson and more.  
+
+                Welancora expands its reach through a network of collaborations and partnerships and organizations and corporations.</h3>
+  						</div>
+  					</div>
+  				</div>
+
+  			 	<div class="col-sm-4">
+  					<div class="panel panel-default text-center">
+  						<div class="panel-body">
+  						<!-- 	<span class="glyphicon glyphicon-play-circle"></span> -->
+  							<h4>278 Jefferson Avenue</h4>
+                <img class="Avenue" src="img/bedstuymiddleint.jpg" alt="Text of the image" style="width:350px;height:600px;">
+  							<h3>
+                 Elander Williams and her two sons, Christian and Corey, last opened their home to us in 2013.  She has added several imaginative features that make her family living spaces even more comfortable, meaningful and beautiful.  As you walk from floor to floor, you will see that Elander has painstakingly taken the time to not only preserve history, but to link those common threads to the present.  She has created an extensive wall gallery of paintings of loved ones through the generations.  If you look closely you may recognize mothers facing daughtes in portraits hung on opposite walls along the stairways. </h3>
+  						</div>
+  					</div>
+  				</div> 
+        </div><!-- end row -->
+
+		</section>
+	</div><!-- End Container -->
+
+<!-- Faq -->
+
+    <div class="container">
+      <section>
+        <div class="page-header" id="faq">
+          <h2>FAQ.<small> Engaging with consumers.</small></h2>
+        </div><!-- End Page Header -->
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                  Question one?
+                </a>
+              </div><!-- End panel title -->
+              <div id="collapse-1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                </div>
+              </div><!-- End Panel collapse -->
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                  Question Two?
+                </a>
+              </div><!-- End panel title -->
+              <div id="collapse-2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                </div>
+              </div><!-- End Panel collapse -->
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                  Question Three?
+                </a>
+              </div><!-- End panel title -->
+              <div id="collapse-3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                </div>
+              </div><!-- End Panel collapse -->
+            </div>
+          </div>
+        </div><!-- End panel group -->
+
+      </section>
+    </div><!-- End container -->
+
+
+<!-- Contact -->
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+
+
+            <address>
+              <strong>Brownstone Magic Ltd.</strong></br>
+              123 Country Lane </br>
+              Atlanta, Georgia</br>
+              P: (404) 123-4567</br>
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+             
+
+            </form>
+          </div>
+        </div><!-- End the row -->
+
+    </section>
+  </div>
+
+<!-- Footer -->
+
+    <footer>
+      <hr>
+        <div class="container text-center">
+        <h3>Subscribe for more free stuff</h3>
+        <p>Enter your name and email</p>
+
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <label for="subscription">Subscribe</label>
+            <input type="text" class="form-control" id="subscription" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+          </div>
+          <button type="submit" class="btn btn-default">Subscribe</button>
+          
+        </form>
+
+        <hr>
+        <ul class="list-inline">
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">YouTube</a></li>
+        </ul>
+
+        <p><small>&copy; Copyright @ 2017</small></p>
+
+      </div><!-- end Container-->
+      
+
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+	Latest compiled and minified JavaScript
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+</body>	
+</html>
